@@ -1,20 +1,13 @@
-# Programa para converter segundos em horas, minutos e segundos
+# Programa para calcular a área de um triângulo
 
-# Pedindo ao usuário o tempo em segundos
-segundos = int(input("Digite o tempo em segundos: "))
+# Pedindo ao usuário a base do triângulo
+base = float(input("Digite a base do triângulo: "))
 
-# Calculando as horas (1 hora = 3600 segundos)
-horas = segundos // 3600
+# Pedindo ao usuário a altura do triângulo
+altura = float(input("Digite a altura do triângulo: "))
 
-# Pegando o restante dos segundos após tirar as horas
-resto = segundos % 3600
-
-# Calculando os minutos (1 minuto = 60 segundos)
-minutos = resto // 60
-
-# Pegando o restante dos segundos após tirar os minutos
-segundos_restantes = resto % 60
+# Calculando a área (fórmula: base * altura / 2)
+area = (base * altura) / 2
 
 # Exibindo o resultado
-print("Tempo convertido:")
-print(horas, "hora(s),", minutos, "minuto(s) e", segundos_restantes, "segundo(s)")
+print("A área do triângulo é:", area)
